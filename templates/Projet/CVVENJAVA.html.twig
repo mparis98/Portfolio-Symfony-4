@@ -1,0 +1,203 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<!-- about
+================================================== -->
+    <section style="background-color: white;">
+        <div class="row " style="background-color: white;">
+
+
+            <center><h2 style="margin-top: 0 !important;padding-top:15px;"> CVVEN Java </h2></center>
+            <center><h4> Présentation du contexte et des tâches effectuées </h4></center>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style="margin-top:50px; text-decoration: underline green;">I) Contexte</h4>
+
+                    <p>
+                        Dans le cadre du développement sous Java, vous êtes chargés de réaliser un applicatif pour la gestion des
+                        événements. Un événement peut être un colloque, un séminaire ou un congrès.<br><br>
+                        Les principaux objectifs de votre mission se résument dans les points suivants :<br>
+                        - Création d’interfaces graphiques sous Java, en utilisant les outils Java appropriés (Swing, SWT, awt,
+                        JavaFX ...).<br>
+                        - Exploitation d’une base de données relationnelle à partir d’une application Java.<br><br>
+                        L’applicatif doit répondre aux besoins suivants :<br>
+                        1. Création d’une fenêtre d’authentification (Login, mot de passe) ;<br>
+                        2. Saisie des nouveaux événements et des différents participants (Prévoir deux interfaces graphiques
+                        différentes) ;<br>
+                        3. Affichage d’informations de synthèse sur l’ensemble des événements (date, durée, thème, nombre
+                        de participants, …).<br>
+                        Pour une meilleure organisation de la navigabilité entre les interfaces créées, pensez à utiliser les menus
+                        en Java (JMenu).
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style="margin-top:20px; margin-bottom:20px; text-decoration: underline green;">II) Présentation des tâches </h4>
+
+                    <p> Pour réaliser ce projet, nous avons été répartie en groupe de 3-4 personnes. Puis dans ce groupe, nous nous sommes divisés en groupe de 2 pour réaliser des tâches différentes et donc avancer plus rapidement sur le travail demandé.<br>
+                        Mais avant de se répartir en demi-groupes, nous nous sommes concerté afin de concevoir la base de données lié au projet<br>
+                        Mon groupe (composé d'Aymeric et de moi même) avait pour but de créer les fonctionnalités suivante : </p>
+                    <li> formulaire de création de compte utilisateur </li>
+                    <li> fenêtre d'authentification de l'utilisateur avec Hibernate </li>
+
+                    <br>
+                    <p> Quant à l'autre groupe (composé de Kelig et Dawan), il avait pour but de créer les fonctionnalités suivante : </p>
+                    <li>  </li>
+
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style="margin-top:20px; margin-bottom:20px; text-decoration: underline green;">III) Création de compte d'utilisateur </h4>
+                    <p>Tout d'abord, dans ce projet, nous avons utilisé Hibernate afin d'avoir un projet plus structuré et plus simple notamment au niveau des requètes SQL ainsi qu'au niveau de la relation avec la BDD.<br>
+                        On a donc créer une fenêtre avec Java Swing afin de pouvoir créer un utilisateur et ainsi l'insérer dans la BDD</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/CVVEN/java1.png') }}">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="margin-top: 20px;"> En appuyant sur le bouton "S'inscrire", cela va récupérer toutes les informations présentent dans les différents champs puis l'insérer dans notre BDD.</p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/CVVEN/java2.png') }}">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style="margin-top:20px; margin-bottom:20px; text-decoration: underline green;">IV) Connexion de l'utilisateur </h4>
+                    <p>On a créer une fenêtre en Java Swing permettant de s'identifier par rapport aux comptes présent dans la BDD.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/CVVEN/java3.png') }}">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="margin-top: 20px;"> En appuyant sur le bouton "Se connecter", cela va comparer les différents login et password présent dans notre BDD par rapport à ceux saisie par l'utilisateur.</p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/CVVEN/java4.png') }}">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="margin-top: 20px;"> Une fois que la connexion est validée, cela va nous rediriger sur une autre fenêtre "Menu" ou l'utilisateur va pouvoir partciper à un évènement, ajouter un évènement et voir les différents évènements.</p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/CVVEN/java5.png') }}">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Matthieu PARIS 2018</span>
+
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

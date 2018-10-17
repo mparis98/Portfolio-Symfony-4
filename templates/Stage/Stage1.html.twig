@@ -1,0 +1,380 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<!-- about
+================================================== -->
+    <section style="background-color: white;">
+        <div class="row " style="background-color: white;">
+            <center><h2 style="margin-top: 0 !important;padding-top:15px;"> Stage de Première année </h2></center>
+            <center><h4> Bluesquare Computing </h4></center>
+
+            <div class="col-md-12">
+                <div class="thumbnail">
+                    <h4 style="margin-top:50px; text-decoration: underline green;"> Présentation de l'entreprise :</h4>
+                    <p><b>Bluesquare Computing</b> est une jeune société de conseil en technologies en forte croissance fondée par des ingénieurs.<br>
+                        Les activités de l’entreprise se déclinent en 3 catégories :<br><br>
+                        <b>- Activités digitales :</b> Applications mobiles et plateformes web<br>
+                        <b>- Data Mining :</b> R&D externalisée et analyses prédictives<br>
+                        <b>- Start-ups en interne :</b> Production technologique et conseil et structuration<br>
+                    </p><br>
+                    <p>Bluesquare Computing réalise aussi bien des missions dans le domaine du digital
+                        (sites vitrines, sites e-commerces, plateformes sur mesures, web app, app natives iOS et
+                        Android …), mais va également plus loin dans le domaine du big data ou de la R&D où
+                        Bluesquare agit comme laboratoire externalisé pour ses partenaires. </p>
+
+                    <h4 style="margin-top:30px; text-decoration: underline green;"> Présentation de mes activités :</h4>
+
+                    <p>J'ai appris durant ce stage le <b>framework Symfony2</b> et j'ai ensuite appliqué les
+                        connaissances acquises sur un projet nommé <b>Air&Jobs</b>.
+                        J'ai donc rencontré différentes situations professionnelles qui sont :
+                        - La <b>création d'une interface graphique sur un compte administrateur à l'aide du
+                            framework Symfony2 sur le projet Air&Jobs</b> ainsi qu’une <b>fonction permettant d’envoyer un
+                            mail aux différents administrateurs du projet.</b><br><br>
+                        Air&Jobs est une application disponible sur IOS et Android qui a pour but de faciliter
+                        le recrutement dans l’aéronautique. Il y a donc un côté client et un côté recruteur. Cette
+                        application est soutenue par Air & Cosmos, média référence du secteur.
+                        En tant que candidat, vous pouvez balayez vers la droite les offres qui vous intéressent et
+                        entrez directement en relation avec le recruteur. Un CV ainsi qu’une lettre de motivation
+                        n’est pas nécessaire. Vous pouvez choisir des offres selon différents critères : métier,
+                        localisation, salaire, …
+                        En tant que recruteur, vous pouvez balayez vers la droite les candidats qui vous intéressent
+                        et ainsi rentré en relation avec celui-ci. La communication peut se faire via chat ou par un
+                        appel vidéo.<br><br>
+                        - La <b>création d’une page web sur un site déjà disponible qui a pour fonction de
+                            présenter l’entreprise.</b> Ce site en question est mis à la disposition du client lorsque celui-ci
+                        confie un projet à Bluesquare. Il permet de suivre le projet. Lorsqu’une entreprise externe
+                        fait appel à Bluesquare pour réaliser un projet, celle-ci recevra un mail contenant un pdf
+                        présentant l’entreprise ainsi que les différentes méthodes de travail de celle-ci puis un lien
+                        redirigeant sur la page web en question qui représentera donc le pdf mais sous forme digital.</p><br><br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style="margin-top:0px; text-decoration: underline green;"> Air&Jobs :</h4>
+                    <p>Ma tâche au sein de ce projet réalisé sur la première semaine de stage était de
+                        compléter l’interface graphique déjà présente afin d’y rajouter un onglet dans le menu qui
+                        nous renverrai sur une interface présentant un bouton d’envoi de mail vers les
+                        administrateurs.
+                        Afin de réaliser ceux-ci, j’ai donc utilisé le framework Symfony2. J’ai donc créer un
+                        nouveau controller se nommant AdminRecruteurSwipeController qui contient la fonction
+                        « envoieMail() » permettant d’envoyer un mail. (voir image ci-dessous)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/Stage1/air1.png') }}" style="margin-left: 0; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p style="margin-top: 20px;">Ensuite, dans la vue contenant le menu du recruteur se nommant « template-
+                        AdminRecruteur.html.twig », j’ai créé une nouvelle liste « Réinitialisation Swipe ». (Voir
+                        image ci-dessous »)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/Stage1/air2.png') }}" style="margin-left: 0; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p style="margin-top: 20px;">Entre la balise span se trouve le nom du nouvel onglet cliquable qui va renvoyer sur un
+                        fichier « rooting.yml » (Voir image ci-dessous) . Celui-ci va faire le lien entre la vue et le
+                        controller.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/Stage1/air3.png') }}" style="margin-left: 0; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p style="margin-top: 20px;">« admin_recruteur_swipe » renvoie donc à un autre routing se nommant
+                        « routing_swipe.yml »
+                        Celui-ci va contenir toute les fonctions présentes dans le controller
+                        « AdminRectruteurSwipeController » (Voir image ci-dessous)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/Stage1/air4.png') }}" style="margin-left: 0; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p style="margin-top: 20px;">En cliquant donc sur l’onglet « Réinitialisation Swipe », l’utilisateur sera redirigé vers la
+                        vue ou view «swipe.html.twig » grâce à « admin_recruteur_swipe » qui fait appel dans le
+                        controller AdminRecruteurSwipeController à la fonction index.
+                        Sur la vue «swipe.html.twig », l’utilisateur pourra appuyer sur un bouton pour envoyer un
+                        mail. (Voir image ci-dessous)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/Stage1/air5.png') }}" style="margin-left: 0; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p style="margin-top: 20px;">En appuyant sur le bouton, cela enclenchera l’action présente dans la balise form. Cela va
+                        faire appel à la fonction « admin_recruteur_swipe_mail » présente dans le fichier
+                        « routing_swipe.yml » (voir image pour le routing_swipe.yml) qui lui va faire appel à la
+                        fonction « envoieMail() » présente dans le controller et qui va générer le mail. (Voir image
+                        AdminRecruteurSwipeController).</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style="margin-top:0px; text-decoration: underline green;"> Webservice :</h4>
+                    <p>Ce projet consiste à retranscrire un fichier pdf en format numérique et responsive sur un site
+                        déjà existant se nommant « WebService ». Le pdf en question a pour fonction de présenter
+                        l’entreprise, les membres de l’équipe ainsi que le déroulement de la réalisation d’un projet.<br><br>
+                        Au début du projet nous étions que 3 à travailler, dont notamment un chef de projet, qui
+                        nous confié les tâches à réalisés. Le chef de projet nous a donc expliqué ce que devait
+                        10contenir la page à réaliser, dont notamment, la présentation de l’équipe, le suivi du projet,
+                        notre méthode de travail ainsi que les documents téléchargeables tels que les factures. Pour
+                        réaliser ce projet, nous avions comme condition d’utiliser le framework Symfony2.<br><br>
+                        Ce projet s’est déroulé en plusieurs étapes :<br><br>
+                        - La première était de trouver un template Symfony afin d’avoir une base au niveau
+                        de la structure du site.<br>
+                        - La deuxième était de trouver comment intégrer les différents éléments présents sur le
+                        pdf, puis commencer à coder mais pas directement sur le template, pour vérifier si
+                        l’intégration des éléments fonctionnaient correctement.
+                        - La troisième était d’intégrer nos codes sur le template Symfony afin de réalisé un site
+                        statique.<br>
+                        - Puis pour finir, rendre le site dynamique en adaptant le site aux clients ayant fait une
+                        demande de projet. <br><br>
+                        Après avoir finis la mise en place de la page web en version statique, nous nous attaquons à
+                        la version dynamique. On a pour objectif de faire en sorte que cette page web s’adapte pour
+                        chaque client se connectant au site web « WebService ».<br> Pour se faire, nous avons dû
+                        prendre connaissance de la base de données déjà existante sur phpmyadmin.<br><br>
+                        Différentes modalités sont à changer tels que :<br><br>
+                        - L’affichage sur l’accueil du nom et prénom du client connecté<br>
+                        - Afficher dans la section suivi, l’avancement du projet destiné au client<br>
+                        - Rendre dynamique la présentation de l’équipe ainsi que les popups avec les employés
+                        présents dans la BDD<br>
+                        - Mettre à disposition du client les différentes factures, ainsi que ses démarches.
+                        Pour effectuer cela, j’ai dû codé différentes fonctions en php avec le framework Symfony2
+                        dans un controller.<br><br>
+                        Pour l’accueil :<br>
+                        Pour afficher le nom et le prénom du client connecté, j’ai utilisé « getToken() » ainsi que
+                        « getUser() » afin de récupérer l’id correspondant au client. Ensuite avec Doctrine, je décide
+                        d’aller trouvé et de récupérer les informations dans la table User correspondant à l’id
+                        récupérer avec «findOneBy(array("id" => $userCo)) ». Puis je retourne un tableau se
+                        nommant « user » comprenant les informations du client sur la vue.
+                        Puis j’affiche sur la vue le nom et prénom du client avec «  user.firstname  » et
+                        «  user.lastname  ». Firstname et lastname correspond à nos noms de colonnes
+                        présentent dans la table User.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/Stage1/web1.jpg') }}" style="margin-left: 0; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p style="margin-top: 20px;">Pour le suivi :<br><br>
+                        Grâce à la partie juste au-dessus, j’ai donc réussi à récupérer l’id du client qui s’authentifie
+                        sur le site web, ce qui va me faciliter la tâche pour affiché le suivi du projet. Dans la BDD,
+                        chaque client est associé à un projet grâce à une clé étrangère. La table projet possède donc
+                        toutes les différentes tâches a effectué sur le projet. On peut distinguer celles qui sont finis
+                        ou en cours avec l’aide d’une colonne se nommant status. Si la valeur du status vaut 0, alors
+                        la tâche est en cours, puis si elle vaut 1, alors elle est finie.
+                        J’ai donc utilisé deux requêtes afin de récupérer les tâches en cours sur le projet puis celle
+                        qui sont finis.<br>
+                        J’effectue donc les requêtes suivantes :<br><br>
+                        - $timeline =
+                        $this->getDoctrine()->getRepository('BCInvoiceBundle:Projet')->findBy(array("id"
+                        => $userCo, “status” => 0));<br>
+                        - $timeline =
+                        $this->getDoctrine()->getRepository('BCInvoiceBundle:Projet')->findBy(array("id"
+                        => $userCo, “status” => 1));<br>
+                        Puis dans la vue, on affiche le titre de la tâche, sa date de début et de fin puis sa description.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/Stage1/web2.png') }}" style="margin-left: 0; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p style="margin-top: 20px;">Pour l’équipe :<br><br>
+                        Tout d’abord, chaque employé possède un avatar, cependant la BDD tel qu’elle n’est pas
+                        adaptée à cela, il faut donc permettre l’upload de l’image. Pour cela, il faut donc rajouter
+                        une colonne avatar à la table Employee. Pour se faire, on va éditer un fichier comprenant
+                        l’entité Employee.<br><br>
+
+                        Ensuite, pour permettre l’envoi de l’image, nous allons rajouter un champ dans notre
+                        formulaire :<br>
+                        $builder->add('avatar','file', array('label' => 'avatar', 'required' => '', 'data_class' => null, 'attr'
+                        => array('class' => 'form-control') ));<br>
+                        $builder->get("avatar")->addModelTransformer(new
+                        CallbackTransformer(function ($originalDescription){<br>return
+                        "";},function($submittedDescription) {<br>return $submittedDescription;}));<br><br>
+                        Ensuite, maintenant que l’upload de l’image est possible, j’ai décidé d’utiliser une requête
+                        afin de récupérer toutes les données présente dans la table Employee de notre BDD. On va
+                        donc y récupérer tous les employés. Puis dans la vue, on va effectuer une boucle ( for
+                            equipe1 in equipe  pour affiché tous les employés dont leur nom et prénom avec
+                        equipe1.firstname et equipe1.lastname</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/Stage1/web3.jpg') }}" style="margin-left: 0; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p style="margin-top: 20px;">Puis pour finir, il faut que chaque employée puisse avoir son propre popup afin d’y ajouter
+                        leur description. Pour se faire, on a utilisé un plugin se nommant « magnific popup ». Celui-
+                        ci va nous permettre de faire appel à une vue contenant le popup.<br><br>
+                        On crée donc une nouvelle vue qui comprend un popup général mais qui s’adaptera en
+                        fonction de l’id de l’employée récupéré. <br>
+                        Ensuite, on y rajoute une root dans notre fichier routing.yml <br>
+                        Puis enfin, on ajoute une nouvelle fonction dans notre controller, qui va permettre d’envoyé
+                        dans cette nouvelle vue les informations comprises dans la table Employée et qui va
+                        permettre de renvoyer la vue.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset(assets_url ~ 'img/Stage1/web4.png') }}" style="margin-left: 0; margin-top: 20px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        <a href="{{ asset(assets_url ~ 'pdf/Rapport-Stage-Bluesquare.pdf') }}" download> Télécharger le pdf </a><iframe src="{{ asset(assets_url ~ 'pdf/Rapport-Stage-Bluesquare.pdf') }}" style="width:570px; height: 750px;"></iframe> </center>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+================================================== -->
+<footer>
+
+    <!--  <div class="row footer-main">
+
+          <div class="col-six tab-full left footer-desc">
+
+              <div class="footer-logo"></div>
+              Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+
+          </div>
+
+          <div class="col-six tab-full right footer-subscribe">
+
+              <h4>Get Notified</h4>
+              <p>Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.</p>
+
+              <div class="subscribe-form">
+                  <form id="mc-form" class="group" novalidate="true">
+                      <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                      <input type="submit" name="subscribe" value="Subscribe">
+                      <label for="mc-email" class="subscribe-message"></label>
+                  </form>
+              </div>
+
+          </div>
+
+      </div> <!-- end footer-main -->
+
+    <div class="row footer-bottom">
+
+        <div class="col-twelve">
+            <div class="copyright">
+                <span>© Copyright Matthieu PARIS 2018</span>
+
+            </div>
+
+            <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+    </div> <!-- end footer-bottom -->
+
+</footer> <!-- end footer -->
+
+
+<!-- photoswipe background
+================================================== -->
+<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                "Zoom in/out"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+            "Next (arrow right)"></button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div> <!-- end photoSwipe background -->
+
+
+<!-- preloader
+================================================== -->
+<div id="preloader">
+    <div id="loader">
+        <div class="line-scale-pulse-out">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

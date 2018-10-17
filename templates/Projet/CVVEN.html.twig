@@ -1,0 +1,228 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<!-- about
+================================================== -->
+    <section style="background-color: white;">
+
+        <div class="row" style="background-color: white;">
+
+            <center><h2 style="margin-top: 0 !important;padding-top:15px;"> CVVEN </h2></center>
+            <center><h4> Présentation du contexte et des tâches effectuées </h4></center>
+            <div class=""></div>
+            <div class="col-md-2" style="margin-top:20px;">
+            </div>
+            <div class="col-md-8" style="margin-top:20px;">
+                <h4 style="margin-bottom:20px;">I) Contexte</h4></center>
+
+                <p>Le CVVEN (Comité pour les Villages de Vacances de l'Education Nationale) est une association
+                    (fictive) régie par la loi de 1901, et qui joue le rôle de comité d'entreprise auprès de tous les agents
+                    de l'Education Nationale. <br>
+                    Le CVVEN dispose de 4 villages de vacances répartis dans toute la France : Les Rousses (Jura), La
+                    Rochelle (Charente-Maritime), Saint-Anthème (Puy-de-Dôme), et Villefort (Lozère).<br>
+                    Le but est de développer une application de réservation des séjours de vacances en PHP en utilisant le
+                    framework CodeIgniter.<br><p>
+
+                <h4 style="margin-top:20px; margin-bottom:20px;">II) Description du site </h4>
+
+                <p><b> Hébergement et restauration :</b> </p>
+                <li> 40 logements : entrée, douche et wc, 2 chambres à 2 lits avec coin toilette et balcon. </li>
+                <li> 15 chambres doubles : entrée, douche et wc, 1 lit double. </li>
+                <li> 8 chambres de 3 lits séparés par une cloison mobile avec coin toilette, wc, douche. </li>
+                <li> 12 chambres de 4 lits séparés par une cloison mobile avec douche, wc et balcon. </li>
+                <li> 1 logement adapté pour les personnes à mobilité réduite. </li>
+
+                <p style="margin-top:10px";>Le ménage des appartements est à la charge des occupants. Il est possible de prendre à l'arrivée un
+                    forfait "ménage fin de séjour".
+                    Le restaurant accueille les vacanciers en pension complète ou demi-pension toute l'année.
+                    Possibilité de pique-nique. Repas adaptés pour les bébés.</p>
+
+                <p style="margin-top:20px;"><b> Les salles de colloques :</b> </p>
+                <li> Une salle de conférence de 196 places avec tablettes écritoires, sonorisée et équipée d'un
+                    vidéo-projecteur pour grand écran. </li>
+                <li> Une salle de commission de 45 à 50 places, avec tablettes écritoires et tableau blanc.
+                    Ces deux salles sont équipées d'un secrétariat attenant, avec téléphone en ligne directe.</li>
+                <li> Deux salles de commission : 25 et 10 places avec tables, chaises et tableaux blancs. </li>
+                <li> Autres espaces de rencontres informelles, confortablement aménagés. </li>
+                <li> Un lieu d'accueil spacieux. </li>
+                <li> Un lieu d'exposition spacieux et clair. </li>
+
+                <p style="margin-top:20px;"><b> Animations :</b> </p>
+                <p>En toute saison, le centre dispose : d'une bibliothèque adultes et enfants, de télévisions, d'un piano,
+                    d'une table de ping-pong, et d'une salle de fitness.
+                    Selon les semaines, peuvent être organisés, des soirées dansantes, des spectacles assurés par des
+                    intervenants extérieurs (chansons, danses folkloriques, théâtre, magie, cirque, diaporama,
+                    expositions), du cinéma, des concerts <br>
+                    Pendant les vacances scolaires, des activités manuelles (arts plastiques...) ou des ateliers (danses,
+                    musique, remise en forme, théâtre...) sont organisés.<br>
+                    En été, le centre dispose d'un terrain de sport (basket ball, volley, handball...) et d'un parc de VTT
+                    que peuvent louer les participants.<br>
+                    En hiver, location de matériel (ski, raquette, chaussures de randonnée) avec un partenaire.
+                    Pour les participants aux colloques, le centre peut proposer des randonnées encadrées par des
+                    professionnels.</p>
+
+                <h4 style="margin-top:20px; margin-bottom:20px;">III) Présentation des tâches </h4>
+
+                <p> Pour réaliser ce projet, nous avons été répartie en groupe de 3-4 personnes. Puis dans ce groupe, nous nous sommes divisés en groupe de 2 pour réaliser des tâches différentes et donc avancer plus rapidement sur le travail demandé.<br>
+                    Mais avant de se répartir en demi-groupes, nous nous sommes concerté afin de concevoir la base de données lié au projet<br>
+                    Mon groupe (composé d'Aymeric et de moi même) avait pour but de créer les fonctionnalités suivante : </p>
+                <li> formulaire de création de compte utilisateur </li>
+                <li> possibilité de changer son mot de passe via un formulaire </li>
+                <li> authentification des utilisateurs enregistrés dans la base de données (mise en place
+                    d'une session)</li>
+                <li> bouton de déconnexion </li>
+                <li> assurer une navigation fluide entre les différentes pages de l’application </li><br>
+                <p> Quant à l'autre groupe (composé de Kelig et Dawan), il avait pour but de créer les fonctionnalités suivante : </p>
+                <li> Formulaire de réservation des séjours. Une réservation dure toujours une semaine du
+                    samedi au samedi. Attention : les semaines hors vacances scolaires sont de toute façon
+                    indisponibles pour les séjours de vacances </li>
+                <li> Possibilité de choisir la « pension complète », ou la « demi-pension », et optionnellement un forfait « ménage fin de séjour » </li>
+                <li> Affichage des réservations d'un utilisateur en particulier ou de tous les utilisateurs </li>
+                <li> Possibilité pour un utilisateur d'annuler une demande de réservation tant qu'elle n'a
+                    pas été validée par un administrateur du site </li>
+                <li> Contrôler la validité des données saisies dans le formulaire </li>
+
+            </div>
+
+
+            <div class="col-md-2" style="margin-top:20px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7" style="margin-top:40px;">
+
+                <h4 style="margin-top:20px; margin-bottom:20px;">IV) Authentification des utilisateurs </h4>
+                <p><b> Formulaire de création de compte utilisateur :</b> </p>
+                <p> On a créer un nouveau controller destiné aux réservations des chambres et inscription des utilisateurs. <br><br>Pour le formulaire de création de compte des utilisateurs,
+                    nous avons crée une fonction intitulée "inscription_submitted()" dans ce controller qui contient la création du formulaire de réservation (nom, prénom, adresse, code postal, mail, téléphone, login et password).<br><br>
+                    Ensuite, on appelle la fonction "form_insert()" contenu dans le modèle "Inscription" en faisant passer le tableau contenant le formulaire d'inscription.<br> Cette fonction a pour rôle d'envoyer dans la base de donnée les informations saisie grâce au formulaire.
+                </p>
+            </div>
+            <div class="col-md-5" style="margin-top:40px;">
+                <img src="{{ asset(assets_url ~ 'img/CVVEN/form_inscription.png') }}"  height="30%" width="65%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5" style="margin-top:40px;">
+                <img src="{{ asset(assets_url ~ 'img/CVVEN/form_connexion.png') }}"  height="30%" width="80%">
+            </div>
+
+            <div class="col-md-7" style="margin-top:40px;">
+                <p><b> Authentification des utilisateurs enregistrés dans la base de données :</b> </p>
+                <p> On a créer un nouveau controller destiné à la connexion des utilisateurs. <br><br>
+                    Ensuite, nous avons crée une fonction intitulée "connexion_user()" qui contient le code permettant de se connecter avec un compte crée grâce à l'étape au dessus.<br>
+                    On initialise tout d'abord un formulaire afin que l'utilisateur puisse rentrer son login et son mot de passe.<br> On va ensuite envoyé ses informations à la fonction qui se nomme "connexion()" contenue dans le modèle "Connexion_model"(voir image ci-dessous).
+                    <img src="{{ asset(assets_url ~ 'img/CVVEN/model_connexion.png') }}" style="margin-top:20px;">
+                <p> Une fois que l'on a récupéré les informations lié aux données saisie par l'utilisateur, on créer une nouvelle session avec la méthode "set_userdata()".<br>
+                    Puis on charge dans une nouvelle vue les informations liés à l'utilisateur.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7" style="">
+                <p><b> Bouton de déconnexion :</b> </p>
+                <p> Dans le même controller que pour la connexion, nous avons créer une nouvelle fonction qui a pour but de déconnecter l'utilisateur lorsqu'il appuie sur le bouton "Deconnexion" <br>
+                    Pour déconnecter l'utilisateur, on détruit la session existante avec la méthode "unset_userdata()" et on renvoie l'utilisateur sur la page de connexion.</p>
+            </div>
+
+            <div class="col-md-5" style="">
+                <img src="{{ asset(assets_url ~ 'img/CVVEN/logout.png') }}">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5" style="margin-top:50px; margin-bottom:40px;">
+                <img src="{{ asset(assets_url ~ 'img/CVVEN/menu_connexion.png') }}"   style="margin-bottom:20px; height:30%; width:80%;">
+                <img src="{{ asset(assets_url ~ 'img/CVVEN/menu_accueil.png') }}"  style="height:30%; width:80%;">
+            </div>
+
+            <div class="col-md-7" style="margin-top:40px;">
+                <p><b> Navigation fluide entre les différentes pages de l’application :</b> </p>
+                <p> On a crée dans nos vues différents menu afin de naviguer entre les vues.<br>
+                    Par exemple, lorsque l'on se connecte, l'utilisateur peut soit accéder au formulaire de réservation, soit se déconnecter.</p>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Matthieu PARIS 2018</span>
+
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

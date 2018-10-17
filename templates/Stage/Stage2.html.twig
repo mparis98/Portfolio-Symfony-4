@@ -1,0 +1,276 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<!-- about
+================================================== -->
+    <section style="background-color: white;">
+        <div class="row " style="background-color: white;">
+
+
+            <center><h2 style="margin-top: 0 !important;padding-top:15px;"> Stage de Deuxième année </h2></center>
+            <center><h4> Bluesquare Computing </h4></center>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h4 style="margin-top:50px; text-decoration: underline green;"> Présentation de l'entreprise :</h4>
+                    <p><b>Bluesquare Computing</b> est une jeune société de conseil en technologies en forte croissance fondée par Miche JAUTZY.<br>
+                        Les activités de l’entreprise se déclinent en 3 catégories :<br><br>
+                        <b>- Activités digitales :</b> Applications mobiles et plateformes web<br>
+                        <b>- Data Mining :</b> R&D externalisée et analyses prédictives<br>
+                        <b>- Start-ups en interne :</b> Production technologique et conseil et structuration<br>
+                    </p><br>
+                    <p>Bluesquare Computing réalise aussi bien des missions dans le domaine du digital
+                        (sites vitrines, sites e-commerces, plateformes sur mesures, web app, app natives iOS et
+                        Android …), mais va également plus loin dans le domaine du big data ou de la R&D où
+                        Bluesquare agit comme laboratoire externalisé pour ses partenaires.<br>
+                        L'entreprise utilise en particulier les dernières technologies afin d'éxécuter leurs tâches notamment le framework Symfony 4 </p>
+
+                    <h4 style="margin-top:30px; text-decoration: underline green;"> Présentation de mes activités :</h4>
+
+                    <p>Durant ce stage, j'ai ainsi pu ré-exploiter mes connaissances apprisent durant mon stage de première année sur le <b>framework Symfony2</b> et me familiariser avec Symfony 4 et l'utilisation du scss. J'ai aussi améliorer mes connaissances en javascript notamment en jQuery et en Ajax.<br>
+                        J'ai donc rencontré différentes situations professionnelles qui sont :<br><br>
+                        - La <b>création d'un site vitrine sur un projet en interne appellé "Générateur".</b> Il s'agit d'une API qui a pour but de générer les pages d'un projet selon différents snippet que l'utilisateur aura choisi. Ce projet a pour but de faire gagner énormément de temps lors de création de projet notamment pour créer le back end de celui çi. Avec ce logiciel, l'entreprise à pour objectif de se voir transmettre le titre de <b> jeune entreprise innovante</b><br><br>
+                        - Ensuite j'ai participé à un projet pour l'entreprise <b>Batiphoenix</b>.Batiphoenix est une start up consacrée au réemploi des matériaux de construction, elle accompagne les acteurs du bâtiment dans ce virage écologique. J'ai aussi bien participé au front qu'au back end de celui çi. Grâce a une plateforme nommé <b>"Asana"</b>, nous étions directement en relation avec le client. Celui ci nous faisait part de ses exigences et sur les modifications à faire sur la partie du site présent sur le serveur de développement. Je me suis donc occupé la plupart du temps de réaliser les tâches créer par le client sur la plateforme.<br><br>
+                        - Puis ensuite j'ai participé à un autre projet pour l'entreprise suivante nommé <b>Delicorner</b>. Delicorner a pour but de livrer régulièrement directement dans vos bureaux, en véhicule électrique ou vélo des fruits frais BIO, des fruits secs et en-cas variés de qualité. Comme pour Batiphoenix, je me suis occupé des différentes tâches créer sur la plateforme <b>Asana</b> particulièrement celles liées au back end.
+                    </p><br><br>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 style="margin-top:30px; text-decoration: underline green;"> Générateur :</h4>
+                        <p>Pour le générateur, j'ai donc dû réaliser le site vitrine du projet réalisé en interne par Bluesquare. Avant de m'attaquer directement au code, j'ai chercher différents site vendant des technologies afin d'éxaminer leur structure et de m'en aspirer pour le projet. Ensuite j'ai créé un mockup afin de faire valider la structure du site vitrine. Voici donc ci-dessous le mockup de base, qui a ensuite évolué par la suite.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="{{ asset(assets_url ~ 'img/mockup/generateurProjet.png') }}" style="margin-left: 17%; margin-top: 20px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p style="margin-top: 20px;">Ensuite j'ai donc créer un nouveau projet en Symfony 2. Pour la première partie du site vitrine, je me suis inspiré du site de Bluesquare.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/front.png') }}">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/front1.png') }}" style="margin-left: 12%; margin-top: 20px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-top: 20px;">
+                        <p>Ensuite, la seconde partie consiste à présenter les features du Générateur selon les différents snippet prit en charge par celui ci. Lorsque l'on clique sur un boutton représentant un snippet, celui ci changera les images accompagnant le texte avec une animation.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/snippet.png') }}">
+                    </div>
+                    <div class="col-md-6" >
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/js.png') }}" style="margin-left: 25%; margin-top: 10px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Et ensuite, je me suis inspiré de "Air&Jobs" afin de créer deux tableaux mettant en valeur la version gratuite du générateur et la version payante avec un hover effectuant un zoom et changement de couleur sur celui selectionné.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/tab.png') }}">
+                    </div>
+                    <div class="col-md-6" >
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/tabhtml.png') }}" style="margin-left: 15%; margin-top: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 style="margin-top:30px; text-decoration: underline green;"> Batiphoenix :</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>En ce qui concerne Batiphoenix, je me suis occupé de certaines tâches présentent sur Asana.<br>
+                            Par exemple, la société voulait que l'on puisse générer les factures des clients directement sur le site. Pour se faire, grâce à un modèle donné par le client, je l'ai ainsi intégrer en HTML/SCSS sur le site puis grâce à une librairie à installer sous le nom de "<b>KnpLabs/snappy</b>", il ma permit de faire générer un pdf selon le code présent sur la page web.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/facture.png') }}" style="margin-left: 260px;">
+                    </div>
+                    <div class="col-md-6" >
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/facturePdf.png') }}" style="margin-left: 220px; margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Ensuite, je me suis chargé de faire un "autocomplete" lorsqu'un utilisateur rentre un code postal afin de chercher des vendeurs se trouvant dans cette zone géographique.
+                            Afin de le réalsier, j'ai utilisé l'autocomplete poroposé par Google ayant pour nom "<b>
+                                Place Autocomplete</b>".</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/autocomplete.png') }}">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/autocompleteJs.png') }}"  style="margin-left: 12%; margin-top: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 style="margin-top:30px; text-decoration: underline green;"> Delicorner :</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Pour Delicorner, je me suis occupé de leur plateforme durant 1 semaine dans leur locaux afin de préparer une possible alternance pour l'année prochaine. J'ai donc été au contact du client afin de répondre au mieux à ses besoins. Par exemple, le client voulait voir le prix du devis d'un client à lui avant de faire générer le devis en lui même afin de lui faire gagner du temps. J'ai donc réalisé cette tâche directement dans la vue Twig en y ajoutant un js afin de refrsh la page lorsque l'on supprime un sous produit ce qui permet de refresh le prix totalHT.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/prixDeli.png') }}" style="margin-left: 60%;">
+                    </div>
+                    <div class="col-md-6" >
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/prixDeliTwig.png') }}" style="margin-left: 15%; margin-top: 10px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-top:20px;">
+                        <p>Puis par exemple, l'entreprise cherchait à gérer des locations de mobilier et de fournitures auprès de ses clients. Pour se faire, elle voulait que leur commande ne s'affiche pas dans les livraisons. Pour se faire, j'ai donc rajouté une colonne dans la table "command_group" intitulé "Types" afin de définir si la commande est une location ou non. Si la commande est une location, alors cela sera marqué par un 1 dans la BDD. Grâce à cela, je peux faire le trie des livraisons et des lcoations et donc masqué les locations dans le planning de commande. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/entity.png') }}" style="">
+                    </div>
+                    <div class="col-md-6" >
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/form.png') }}" style="margin-top: 20px; margin-left: 15%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/editForm.png') }}" style="">
+                    </div>
+                    <div class="col-md-6" >
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/location.png') }}" style="margin-top: 20px; margin-left: 80%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/editFormTwig.png') }}" style="margin-left:13%; margin-top: 20px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-top:20px; text-align: center;">
+                        <p>Maintenant vérifions si cette commande apparaît dans le planning de commande. Elle a pour date le 03/04/2018. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/locationForm.png') }}" style=" margin-left: 80%;">
+                    </div>
+                    <div class="col-md-6" >
+                        <img src="{{ asset(assets_url ~ 'img/Stage2/planning.png') }}" id="img" style="margin-top: 20px;margin-left: 5%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-top:20px; text-align: center;">
+                        <p>On observe donc bien que la location ne s'affiche pas.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-top:20px; text-align: center;">
+                        <a href="https://docs.google.com/document/d/1qiS0lYNErf-KZ9qopUsaLzxhWdnUXVsHJO46aUbEbfI/edit?usp=sharing">Documentation d'utilisation</a>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Matthieu PARIS 2018</span>
+
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
